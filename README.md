@@ -30,26 +30,20 @@ $ pip install .
 
 We strongly advise to install the package in a dedicated virtual environment.
 
-Tests
+Demos
 -----
-
-To run the tests, simply do:
-
-```
-$ python -m unittest
-```
-
-Documentation
--------------
-
-To build the `Sphinx` documentation:
+To train a model on all subjects, do: 
 
 ```
-$ pip install sphinx sphinx-bootstrap-theme
-$ cd doc
-$ make html
+$ python main.py -c config.yaml
 ```
-and open the file `build/html/index.html` in your web browser.
+
+To train a model on a single subject, do: 
+
+```
+$ python main.py -c config.yaml --subject_ID=<1..10>
+```
+
 
 References
 -------
