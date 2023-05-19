@@ -30,6 +30,7 @@ $ cd Learn2Feel
 $ make
 ```
 We strongly advise to install the package in a dedicated virtual environment.
+
 If you don't need to download the data, call `make learn2feel`.
 
 Test
