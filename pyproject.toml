@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "learn2feel"
+version = '0.0.1'
+description = "Prediction of perceived surface similarity from filtered tactile data."
+dynamic = ["readme"]
+requires-python = ">=3.7"
+
+dependencies = [
+    "ConfigArgParse==1.5.1",
+    "fast_soft_sort @ git+https://github.com/google-research/fast-soft-sort.git",
+    "h5py==3.3",
+    "numpy==1.21",
+    "pandas==1.3",
+    "PyYAML==6.0",
+    "scipy==1.6",
+    "torch==1.7",
+    "torchvision==0.8",
+    "tensorboard",
+]
+
+[project.scripts]
+train_learn2feel = "learn2feel.main:launcher"
+
+[tool.setuptools.dynamic]
+readme = {file = "README.md"}
+
+[tool.setuptools]
+packages = ["learn2feel"]
+
