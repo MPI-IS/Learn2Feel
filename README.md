@@ -20,7 +20,9 @@ $ conda create -n learn2feel python=3.7
 $ conda activate learn2feel
 ```
 
-Then clone the repository and install it using the `Makefile` (you will be prompted to download the data from the Max Planck data repository [Edmond](https://doi.org/10.17617/3.2HBHR8) ):
+Then clone the repository and install it using the `Makefile` (it will automatically 
+download the data from the Max Planck data 
+repository [Edmond](https://doi.org/10.17617/3.2HBHR8) ):
 
 ```
 $ git clone https://github.com/MPI-IS/Learn2Feel.git
