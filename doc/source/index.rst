@@ -42,9 +42,9 @@ repository `Edmond <https://doi.org/10.17617/3.2HBHR8>`_):
    $ cd Learn2Feel
    $ make
 
-We strongly advise to install the package in a dedicated virtual environment.
-
 If you don't need to download the data, call ``make learn2feel``.
+
+We strongly advise to install the package in a dedicated virtual environment.
 
 Test
 ----
