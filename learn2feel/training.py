@@ -176,6 +176,6 @@ class training_wrapper():
         """Dictionary for storing results, best-performing model, and 
         other relevant data during training, validation, and testing. 
 
-        Populated using calls to :py:meth:`populate_results<learn2feel.training.training_wrapper.populate_results>`.
+        Populated using calls to :py:meth:`populate_results()<learn2feel.training.training_wrapper.populate_results>`.
         """
         return self._result_dict

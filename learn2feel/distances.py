@@ -1,6 +1,6 @@
 """
 Module to define distances between probability distributions.
-To add a distance, define a new class of type torch.nn.Module.
+To add a distance, define a new class of type :py:class:`torch.nn.Module`.
 """
 import torch
 import torch.nn as nn

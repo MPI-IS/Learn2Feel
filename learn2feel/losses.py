@@ -28,6 +28,7 @@ class spearmans_rank(nn.Module):
         self.reg_type = regularization_type
 
     def forward(self,dists,ratings) -> torch.Tensor:
+        ""
         if len(dists.shape)==1:
             dists = dists.unsqueeze(0).to('cpu')
         hard_ranks_D = torch.tensor(stats.rankdata(dists.detach()),dtype=dists.dtype).unsqueeze(0)
