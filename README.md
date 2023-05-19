@@ -71,7 +71,7 @@ Documentation
 -------------
 To build the `Sphinx` documentation:
 ```
-$ pip install sphinx sphinx-bootstrap-theme
+$ pip install sphinx sphinx_rtd_theme
 $ cd doc
 $ make html
 ```
