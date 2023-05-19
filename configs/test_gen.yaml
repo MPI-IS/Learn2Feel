@@ -1,0 +1,41 @@
+data_path: "data/learn2feel_data.hdf5"
+output_path: "results/test_general"
+
+# training parameters
+epochs: 1
+batch_size: 180
+stop_tol: 1e-5
+test_interval: 1
+folds: 5
+fold_split_method: "stratified"
+lr: 1e-4
+
+# probability distance parameters
+# Can build own distance functions and incorporate them here
+probability_distance_params: {
+  "name": "SinkhornDistance",
+  "eps": 0.1,
+  "max_iter": 50,
+  "p": 1
+}
+
+# soft rank parameters
+soft_rank_reg_val: 0.1
+soft_rank_reg_type: "l2"
+
+# dataset parameters
+sensor: "both"
+include_action: true
+include_tap: true
+normalize_tap: true
+include_spread: 
+subject_ID: 
+
+# network parameters
+model_seed: 
+init_model_path:
+model_output_size: 1
+model_hidden_dims: [5]
+model_activation: 'relu'
+model_regularization_methods: 
+
