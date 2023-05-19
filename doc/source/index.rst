@@ -96,7 +96,7 @@ To build the ``Sphinx`` documentation:
 
 .. code::
 
-   $ pip install sphinx sphinx-bootstrap-theme
+   $ pip install sphinx sphinx_rtd_theme
    $ cd doc
    $ make html
 
