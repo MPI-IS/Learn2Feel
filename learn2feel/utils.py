@@ -153,15 +153,15 @@ def summarize_run_data(result_dict,val_fold,test_fold):
     train_rho = [1.0 - result_dict['train_loss']]
     val_rho = [1.0 - result_dict['val_loss']]
     test_rho = [1.0 - result_dict['test_loss']]
-    if len(result_dict['train_detailed'].items())>1:
+    if len(result_dict['train_subj_loss'].items())>1:
         subject = ['all']
-        for sub_id in result_dict['train_detailed'].keys():
-            train_rho.extend([1.0-result_dict['train_detailed'][sub_id]])
-            val_rho.extend([1.0-result_dict['val_detailed'][sub_id]])
-            test_rho.extend([1.0-result_dict['test_detailed'][sub_id]])
+        for sub_id in result_dict['train_subj_loss'].keys():
+            train_rho.extend([1.0-result_dict['train_subj_loss'][sub_id]])
+            val_rho.extend([1.0-result_dict['val_subj_loss'][sub_id]])
+            test_rho.extend([1.0-result_dict['test_subj_loss'][sub_id]])
             subject.extend([sub_id])
     else:
-        subject = list(result_dict['train_detailed'].keys())
+        subject = list(result_dict['train_subj_loss'].keys())
 
     summary = {'Subject': subject,
                'Training Rho': train_rho,
